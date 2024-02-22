@@ -80,7 +80,7 @@ flutter:
       fonts:
         - asset: fonts/GigaSans-black.otf
           weight: 800
-        - asset: fonts/GigaSans-thin.otf
+        - asset: fonts/GigaSans-regular.otf
           weight: 300
           style: normal
   #   - family: Trajan Pro

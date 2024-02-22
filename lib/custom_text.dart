@@ -54,34 +54,28 @@ class _MyCustomTextState extends State<MyCustomText> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        child: Text(
-                          'FlutterBytes',
-                          style: TextStyle(
-                              fontSize: Theme.of(context)
-                                  .textTheme
-                                  .displayLarge
-                                  ?.fontSize,
-                              fontWeight: FontWeight.w800,
-                              fontFamily: 'GigaSans',
-                              wordSpacing: -15,
-                              foreground: () {
-                                if (_isHovering) {
-                                  return Paint()..shader = shader;
-                                } else {
-                                  return Paint()
-                                    ..color = const Color(0xff187BCD);
-                                }
-                              }()),
-                        ),
+                      Text(
+                        'FlutterBytes',
+                        style: TextStyle(
+                            fontSize: 150,
+                            fontWeight: FontWeight.w800,
+                            fontFamily: 'GigaSans',
+                            letterSpacing: -10,
+                            foreground: () {
+                              if (_isHovering) {
+                                return Paint()..shader = shader;
+                              } else {
+                                return Paint()..color = const Color(0xff187BCD);
+                              }
+                            }()),
                       ),
                       Text(
                         "Community",
                         style:
                             Theme.of(context).textTheme.displayMedium?.copyWith(
-                                  fontWeight: FontWeight.w300,
+                                  fontWeight: FontWeight.w400,
                                   fontFamily: 'GigaSans',
+                                  fontSize: 100,
                                 ),
                       )
                     ],
